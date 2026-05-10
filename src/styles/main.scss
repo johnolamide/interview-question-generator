@@ -1,3 +1,7 @@
+@use './components/form';
+@use './components/loader';
+@use './components/results';
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +24,29 @@ body {
   max-width: 680px;
 }
 
-@use './components/form';
-@use './components/loader';
-@use './components/results';
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: -0.75rem;
+  }
+
+  &__error {
+    color: #dc2626;
+    font-size: 0.9rem;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+  }
+}

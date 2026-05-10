@@ -65,9 +65,9 @@ interview-question-generator/
 - [x] `QuestionList.tsx` — renders the 3 returned questions as a numbered list
 
 ### 4. App Assembly
-- [ ] Wire components together in `App.jsx` with state: `jobTitle`, `questions`, `loading`, `error`
-- [ ] Call `generateQuestions` on form submit, update state accordingly
-- [ ] Display inline error message on failure
+- [x] Wire components together in `App.tsx` with state: `jobTitle`, `questions`, `loading`, `error`
+- [x] Call `generateQuestions` on form submit, update state accordingly
+- [x] Display inline error message on failure
 
 ### 5. Styling
 - [ ] Global resets and base styles in `main.scss`
