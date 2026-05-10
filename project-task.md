@@ -60,9 +60,9 @@ interview-question-generator/
 - [x] Handle API errors gracefully (network failure, bad response, empty input)
 
 ### 3. UI Components
-- [ ] `QuestionForm.jsx` — controlled input + submit button, disables while loading
-- [ ] `Loader.jsx` — visible only while API call is in progress
-- [ ] `QuestionList.jsx` — renders the 3 returned questions as a numbered list
+- [x] `QuestionForm.tsx` — controlled input + submit button, disables while loading
+- [x] `Loader.tsx` — visible only while API call is in progress
+- [x] `QuestionList.tsx` — renders the 3 returned questions as a numbered list
 
 ### 4. App Assembly
 - [ ] Wire components together in `App.jsx` with state: `jobTitle`, `questions`, `loading`, `error`

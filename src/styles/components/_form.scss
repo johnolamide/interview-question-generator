@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+
+  &__input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+
+    &:focus {
+      border-color: #6366f1;
+    }
+
+    &:disabled {
+      background: #f3f4f6;
+      cursor: not-allowed;
+    }
+  }
+
+  &__button {
+    padding: 0.75rem 1.5rem;
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+
+    &:hover:not(:disabled) {
+      background: #4f46e5;
+    }
+
+    &:disabled {
+      background: #a5b4fc;
+      cursor: not-allowed;
+    }
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
