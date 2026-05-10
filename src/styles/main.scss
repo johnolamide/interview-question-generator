@@ -10,7 +10,9 @@
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background: #f9fafb;
+  background-color: #f9fafb;
+  background-image: radial-gradient(#d1d1d1 1px, transparent 1px);
+  background-size: 20px 20px;
   color: #1f2937;
   min-height: 100vh;
   display: flex;
@@ -24,29 +26,51 @@ body {
   max-width: 680px;
 }
 
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .app {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  animation: fade-up 0.4s ease both;
+  counter-reset: question-counter;
 
   &__title {
     font-size: 1.75rem;
     font-weight: 700;
     color: #111827;
+    letter-spacing: -0.02em;
   }
 
   &__subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #6b7280;
     margin-top: -0.75rem;
   }
 
   &__error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: #dc2626;
     font-size: 0.9rem;
     background: #fef2f2;
     border: 1px solid #fecaca;
     border-radius: 8px;
     padding: 0.75rem 1rem;
+    animation: fade-up 0.3s ease both;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem;
+    border-radius: 12px;
   }
 }
