@@ -21,18 +21,23 @@ Example format:
 2. Question two?
 3. Question three?`
 
-  const result = await model.generateContent(prompt)
-  const text = result.response.text().trim()
+  try {
+    const result = await model.generateContent(prompt)
+    const text = result.response.text().trim()
 
-  const questions = text
-    .split('\n')
-    .map((line) => line.replace(/^\d+\.\s*/, '').trim())
-    .filter((line) => line.length > 0)
-    .slice(0, 3)
+    const questions = text
+      .split('\n')
+      .map((line) => line.replace(/^\d+\.\s*/, '').trim())
+      .filter((line) => line.length > 0)
+      .slice(0, 3)
 
-  if (questions.length !== 3) {
-    throw new Error('Unexpected response format from Gemini')
+    if (questions.length !== 3) {
+      throw new Error('Unexpected response format from Gemini')
+    }
+
+    return questions
+  } catch (err) {
+    console.error('[Gemini API Error]', err)
+    throw new Error('Unable to generate questions. Please try again.')
   }
-
-  return questions
 }
