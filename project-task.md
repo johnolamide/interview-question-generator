@@ -55,9 +55,9 @@ interview-question-generator/
 - [x] Set up SCSS support (install `sass` via Bun)
 
 ### 2. API Integration
-- [ ] Create `src/api/gemini.js` with a `generateQuestions(jobTitle)` function
-- [ ] Write a prompt instructing the model to return exactly 3 specific, thoughtful interview questions
-- [ ] Handle API errors gracefully (network failure, bad response, empty input)
+- [x] Create `src/api/gemini.ts` with a `generateQuestions(jobTitle)` function
+- [x] Write a prompt instructing the model to return exactly 3 specific, thoughtful interview questions
+- [x] Handle API errors gracefully (network failure, bad response, empty input)
 
 ### 3. UI Components
 - [ ] `QuestionForm.jsx` — controlled input + submit button, disables while loading
