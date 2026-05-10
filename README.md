@@ -43,6 +43,6 @@ VITE_GEMINI_API_KEY=your_api_key_here
 bun run dev
 ```
 
----
+![App Screenshot](./screenshot/Screenshot%202026-05-10%20at%2021.16.47.png)
 
-> Screenshot coming soon.
+---

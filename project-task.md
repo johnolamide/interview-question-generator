@@ -82,7 +82,7 @@ interview-question-generator/
 
 ### 6. Deployment
 
-- [ ] Push repo to GitHub
-- [ ] Add `VITE_GEMINI_API_KEY` as a secret in GitHub and as an environment variable in Vercel/Netlify
-- [ ] Connect repo to Vercel or Netlify and deploy
-- [ ] Verify live URL works end-to-end
+- [x] Push repo to GitHub
+- [x] Add `VITE_GEMINI_API_KEY` as a secret in GitHub and as an environment variable in Vercel/Netlify
+- [x] Connect repo to Vercel or Netlify and deploy
+- [x] Verify live URL works end-to-end
